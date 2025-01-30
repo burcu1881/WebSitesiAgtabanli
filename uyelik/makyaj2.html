@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>project</title>
+    <style>
+        
+        
+        .box3 {
+            background-image: url('icon.png');
+            background-position: center;
+            width:130px ;
+            height:50px;
+            background-size: contain;
+            border-radius:10px;
+            border: 5px inset #e87dcf ; 
+            margin-left:10px ; 
+            margin-top:7px;
+            display:inline-block;
+            vertical-align:top;                
+        }
+        .box3 a {   /* Bu div'in tıklanabilir alanı */
+            width:130px ;
+            height:50px;
+            margin-left:10px ; 
+            margin-top:7px;
+            position: absolute; /* Kutuyu kapla */
+        }
+
+        body,html {
+            overflow: hidden; /* Kaydırmayı devre dışı bırak */
+            margin: 0;    /* Tarayıcı varsayılan dış boşluklarını kaldır */
+            padding: 0;   /* Tarayıcı varsayılan iç boşluklarını kaldır */
+            width: 100%;  /* Ekranın genişliği */
+            height: 100%; /* Yüksekliği ekran boyutuna ayarlar */ 
+        }
+
+        .box4 {
+            background-image: url('BURCU 2.png'); 
+            background-position: left; 
+            background-size: cover; 
+            height: 100%; /* Ekranın tamamını kapla */
+            width:100%;   /* Ekranın tamamını kapla */
+            background-repeat:no-repeat; 
+            margin-top:-15px;
+            margin-left:-20px; 
+        }
+
+        .menu1{                             
+            list-style-type: none;   
+            width:100%; 
+            background-color:#e87dcf ; 
+            margin-top:-13px ; 
+            margin-left:-8px;
+        } 
+
+        .menu1ulli{
+            margin-right:20px;
+            padding:10px; 
+            background-color: #e87dcf;
+            margin-left:-30px ; 
+            padding-left: 5px;
+            display:inline-block; 
+            width:125px; 
+            text-align:center;
+        } 
+        .menu1ulli:hover{        
+            background-color:#a5dde6 ;
+            transition:0.75s;   
+        }
+        .menu1ul_li_a{                   
+            text-decoration:none;    
+            color:antiquewhite; 
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+            font-weight:bold;
+        } 
+
+        .menu2{
+            list-style-type:none; 
+            width:50%; 
+            background-color:white;  
+            display:inline-block;
+            vertical-align:top; 
+            margin-left:1150px; 
+            margin-top:-35px;
+        } 
+        .menu2ul_li{
+            background-color:white; 
+            width:70px;
+            display:inline-block; 
+            margin-left:10px; 
+            margin-right:10px;
+            text-align:center; 
+            font-weight:800;
+        } 
+        .menu2ul_li:hover{
+            transform: translateY(-5px);
+            transition: 0.3s ease;
+        }
+        .menu2ul_li_a{
+            text-decoration:none; 
+            color:black; 
+            font-family: 'Times New Roman', Times, serif; 
+            font-style:italic; 
+            font-size:larger;
+        }
+
+        .background{
+            background-color:#f3bed8; 
+            width: 1920px; 
+            height:620px; 
+            margin-top:-20px ;
+            display: flex;              
+            justify-content: start;     
+            align-items: start;    
+        }
+
+        .socmedbox{
+            height:95px;
+            width:320px;
+            border:5px solid #e87dcf ; 
+            border-radius:32px ;
+            background-color:white;
+            margin-top:75px; 
+            margin-left:30px;
+            margin-bottom:350px;  
+            display:block;
+        } 
+        .iconinsta{
+            background-image:url(instaicon2.jpg);
+            background-position: center; 
+            display:inline-block;
+            width:80px;
+            height:80px; 
+            margin-left:10px;
+            margin-top:10px;
+            background-size:contain;
+        }  
+        .iconx{
+            background-image:url(twittericon.jpg);
+            background-position: center; 
+            display:inline-block; 
+            width:70px;
+            height:70px; 
+            background-size:contain;  
+            margin-left:30px; 
+            margin-top:5px; 
+            margin-bottom:7px ;
+            border-radius:35%;
+        }  
+        .iconfacebook{
+            background-image:url(faceicon.jpg); 
+            background-position:center; 
+            display:inline-block; 
+            width:75px; 
+            height:75px;
+            background-size:contain;  
+            margin-left:30px;
+            margin-bottom:5px;
+        }
+        .metin{
+            color:white;
+            position:absolute ;
+            font-weight:bolder;
+            font-size:large;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+            word-spacing:-2px ;
+            margin-top:-39px ;
+            margin-left:-3px;
+        }
+
+        form{
+            margin-top:230px; 
+            margin-left:-320px;
+            width: 300px;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-bottom: -5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px; 
+            margin-bottom: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="reset"], button {
+            padding: 10px 15px;  
+            border:none;
+            background-color: #e87dcf;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #d36cba;
+        }
+
+        .metin2{
+            color:white;
+            position:relative;
+            margin-left:100px ;
+            font-weight:bolder;
+            font-size:large;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+            word-spacing:-2px ;
+        }
+        .iletisimbilgi {
+            text-decoration: none;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: larger;
+            margin-top:80px;
+            display: block; 
+            margin-left:-130px;
+        }
+
+        .metinhakkimizda{
+            color:white;
+            position:absolute ;
+            font-weight:bolder;
+            font-size:xx-large;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+            word-spacing:-2px ;
+            margin-top:20px ;
+            margin-left:30px;
+        } 
+        .hakkimizdabilgi{
+            text-decoration: none;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: larger;
+            margin-top:80px; 
+            display: block;  
+            max-width: 1200px;
+            margin-left:30px;
+        }
+
+        .urun1div{
+            position: relative;
+            height:300px; 
+            width:300px; 
+            border:8px inset #e87dcf; 
+            border-radius:20%;
+            margin-left:30px; 
+            margin-top:30px;
+            display:inline-block;  
+            background-image:url(ciltbakimda1.jpg); 
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-size:cover ; 
+        }
+        .urun1aciklamadiv{
+            width:270px; 
+            height:50px; 
+            margin-left:-310px;
+            margin-top:350px; 
+            border:5px solid #e87dcf  ;
+            position:relative;  
+            top:-3px; 
+            background-color:white ; 
+            color:#d36cba; 
+            padding-bottom:7px ;
+            padding-top:-50px ;
+        }
+        .urunyazi{
+            color:#d36cba; 
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            font-size:medium;
+            padding-left:5px ; 
+        }
+
+        .urunsayfasi{
+            position: relative;
+            height:480px;   
+            width:480px; 
+            border-radius: 5%;
+            margin-left:60px; 
+            margin-top:50px;
+            display:inline-block;  
+            background-image:url(makyaj2.webp); 
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-size:cover ; 
+        }
+        .urunsayfasiContainer {
+            display: inline-block; /* Ürün kutularını yan yana yerleştirmek için */
+            text-align: center; /*Açıklama yazısını ürünle hizalamak için*/
+            position: relative; /* Tooltip konumlandırması için gerekli */
+            margin: 20px;
+        }
+
+        .urunBaslik {
+            position: absolute;
+            margin-top:60px ;
+            margin-left: 600px;
+            
+            /* Metin stili */
+            color: #d36cba; 
+            font-weight: bold; 
+            font-size: 28px; 
+            font-family: Arial, sans-serif;
+
+            /* Arka plan ve görünüm */
+            background-color: rgba(255, 255, 255, 0.7); 
+            padding: 5px 10px; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        /* Fiyat kutusu */
+        .urunFiyat {
+            position: absolute;
+            margin-top: 400px;
+            margin-left: 605px;
+
+            color:#e87dcf;             
+            font-weight: bold;
+            font-size: 28px;         
+            font-family: Arial, sans-serif;
+            
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px 16px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        /* Ürün sayfası açıklaması */
+        .urunSayfasiAciklama {
+            position: absolute;
+            margin-top: 110px;
+            margin-left: 610px; 
+            
+            color: white;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                          'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+            word-spacing: -2px;
+            
+            padding: 10px;
+        }
+
+        .new {
+            position: absolute;
+            margin-top: 460px;
+            margin-left: 610px; 
+            
+            color:black; 
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        /* ===========================
+           CSS KODLARI SONU
+        ============================ */
+    </style>
+</head>
+<body>
+
+    <!-- Logo divi -->
+    <div class="box3">  
+        <a href="proje.html"></a>
+    </div> 
+
+    <!-- Üst menü (menu2) -->
+    <ul class="menu2">              
+        <li class="menu2ul_li" style="width:85px;"> 
+            <a class="menu2ul_li_a" href="hakkimizda.html"> Hakkımızda </a>
+        </li> 
+        <li class="menu2ul_li">  
+            <a class=menu2ul_li_a href="http://localhost/uyelik/kayit.php">İletişim</a> 
+
+            <!-- <a href="hakkimizda.html" target="_blank">Hakkımızda</a> ile de yeni sekmede a.ılmayı sağlayabilirdik. -->
+
+            
+        </li> 
+
+        <li class="menu2ul_li"> 
+            <a class=menu2ul_li_a href="subeler.html"> Şubelerimiz </a>
+        </li> 
+    </ul>
+
+    <!-- Alt menü (menu1) -->
+    <ul class="menu1">   <!-- unordered list -->
+        <li class="menu1ulli">
+            <a class="menu1ul_li_a" href="ciltbakimi.html"> Cilt Bakımı</a>
+        </li>
+        <li class="menu1ulli" >
+            <a class="menu1ul_li_a" href="sacbakim.html"> Saç Bakım </a>
+        </li>
+        <li class="menu1ulli" >
+            <a class="menu1ul_li_a" href="makyaj.html"> Makyaj </a>
+        </li>
+        <li class="menu1ulli">
+            <a class="menu1ul_li_a" href="bakim.html"> Parfüm </a>
+        </li>  
+    </ul>
+
+    <!-- Arka plan -->
+    <div class="background"> 
+        <!-- Ürün kutusu -->
+        <div class="urunsayfasi"></div>
+
+        <!-- Ürün başlık -->
+        <div class="urunBaslik">
+            Maybelline New York Super Stay Likit Parlak Ruj 55 Royal
+        </div>
+
+        <!-- Fiyat kutusu -->
+        <div class="urunFiyat">
+            999,99 TL
+        </div>
+
+        <!-- Açıklama metni -->
+        <div class="urunSayfasiAciklama">
+            • Super Stay Vinyl Ink ailesi ile 16 saate kadar* kalıcı etki ve süper parlaklık.<br>
+• Yeme, içme ve bulaşmaya dayanıklı.<br>
+• Yapışkan his bırakmayan formül.<br>
+• Kolay uygulama sağlayan fırça.<br>
+• Yüksek parlaklık ve kalıcılık.<br>
+        </div>
+
+        <!-- Ek bilgi -->
+        <div class="new">
+            250 TL VE ÜZERİ ALIŞVERİŞE PARFÜM KATEGORİLERİNDE NET %60 İNDİRİM
+        </div>
+    </div>
+
+</body>
+</html>

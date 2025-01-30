@@ -1,0 +1,113 @@
+h1{
+    color:white ;
+    background-color:black;
+} 
+
+h2{
+    color:pink; 
+    background-color:black;
+} 
+
+.yaziOzellik{
+    color:darkgreen; 
+    background-color: white;
+} 
+/* burda yazıOzellik diye bir class oluşturdum.class oldugunu belirtmek icinmde basşına bir nokta koydum.bunu diger dosyada cagırdıgımda ilgili textE
+dark green rengi uygulanacak.*/ 
+
+.box{
+    color:#cf34eb; 
+    background-color:#e4ebdd ; 
+    width:200px; 
+    height: 150px;
+    text-align:center;
+    padding-top:25px; 
+    
+}
+
+.box2{
+    color:brown; 
+    background-color: greenyellow; 
+    width: 200px; 
+    height: 150px; 
+    text-align:center;
+
+}
+
+.box3{ 
+    background-image:url(netflix.png);   /* box3 classının özelliklerinde background-image kullanarak fotoğraf yükleyebiliriz */
+    background-position: center;        /* cover ve center özellikleri ortalama için önemlidir */
+    background-size:cover;  
+    width:150px; 
+    height:150px;  
+    border: 5px solid red;
+    /*border'ın 3 parametresi vardır:kalınlık,tür,renk
+      solid,double,dotted,inset vs gibi türler vardır.*/ 
+
+    border-radius:25px; 
+
+    /*border-radius ile çerceyveyi ovalleştirebiliriz.
+    eger border-radius:50% diye kullanırsak tam bir yuvarlak elde edilir.köşelerden %50 oranında kırpılması için kullanılır*/
+}  
+
+.kutu{
+
+    background-color:pink ;
+    width:50%; 
+    height:100px;
+
+    /*width 50% ile mevcut tarayıcının %50lik genişliğinin kaplanmasını isteyebiliriz.bu sayede tarayıcı full ekran olmadıgı zaman bile div'in tamamını görebiliriz.*/
+} 
+
+/*margin özelligi*/ 
+/* div'in websitesinde sagdan soldan boşluk bırakmasına yarar margin-bottom,margin-right gibi özellikler de vardır */ 
+
+.box4{
+    background-color:darkorchid; 
+    width: 250px; 
+    height: 250px; 
+    margin-left:50px; 
+    margin-top:50px;
+
+}  
+
+/*padding özelligi*/  
+/*bu da content ici kaydırmalar icindir*/
+
+.divici{
+    padding-left:30px; 
+    padding-top:20px;
+}
+ 
+
+.kutu1{
+    width:300px; 
+    height:300px; 
+    background-color: orange; 
+    display:inline;
+}
+
+.kutu2{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine; 
+    display:inline;
+}
+
+.metin{
+    height: 150px;
+    color:#cf34eb;
+    background-color: antiquewhite; 
+    text-align:center ;
+    font-weight:bold; 
+    font-family:Arial, Helvetica, sans-serif; 
+    font-style:italic; 
+    text-transform:lowercase;
+    letter-spacing:2px; 
+    text-decoration:underline; 
+    word-spacing:4px;
+
+}
+
+
+
